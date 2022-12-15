@@ -19,8 +19,32 @@
 </head>
 
 <body class="bg-dark">
-    <main>
+    <main class="container d-flex">
+        <form id="form" class="text-white w-50  d-flex justify-content-between flex-column my-5 p-5 gap-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="odd" value="odd">
+                <label class="form-check-label">
+                    DISPARI
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="even" value="even">
+                <label class="form-check-label">
+                    PARI
+                </label>
+            </div>
+            <input type="number" class="form-control w-50 text-center fs-5" id="user" max="5"
+                placeholder="inserisci un numero tra 1 e 5." value="3">
+            <button class="btn btn-outline-info w-50 ">GIOCA</button>
+        </form>
+        <div class="d-flex justify-content-between flex-column my-5 p-5 gap-3">
+            <h3 class="text-white text-center">RISULTATO</h3>
+            <div class="result text-center  d-flex flex-column justify-content-center align-items-center ">
+                <h1 id="target"></h1>
+                <h5 id="message"></h5>
 
+            </div>
+        </div>
     </main>
     <!--my script-->
     <script src="script/script.js"></script>
