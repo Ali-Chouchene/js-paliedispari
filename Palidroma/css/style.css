@@ -1,0 +1,15 @@
+#paste {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.important {
+    background-color: rgba(255, 255, 0, 0.568);
+}
