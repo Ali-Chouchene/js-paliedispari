@@ -7,6 +7,7 @@ Creare una funzione per capire se la parola inserita è palindroma
 // * 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 
 function invertWord(word) {
+    word = word.toLowerCase();
     let reversed = "";
 
     for (let i = word.length - 1; i >= 0; i--) {
@@ -14,9 +15,6 @@ function invertWord(word) {
     }
     return reversed;
 }
-
-
-
 
 // ! start
 
@@ -35,10 +33,10 @@ form.addEventListener("submit", function (event) {
         message = finalName;
 
     } else {
-        message = `la parola ${inputName}  non è Polidroma.`;
+        message = `la parola <u>${inputName}</u> non è Polidroma.`;
     }
     result.classList.remove("d-none")
-    result.innerText = message;
+    result.innerHTML = message;
     return
 })
 

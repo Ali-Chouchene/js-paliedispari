@@ -34,14 +34,13 @@ const userInput = parseInt(document.getElementById("user").value);
 const paste = document.getElementById("target");
 const winner = document.getElementById("message");
 
-let total = 0;
-let message = "";
+
 //! button click
 form.addEventListener("submit", function (event) {
-
     event.preventDefault();
+    let total = 0;
+    let message = "";
     const userChoice = document.querySelector('input[type=radio]:checked').value;
-
 
     //genero numero per cpu
     const cpuNumber = getRandom(1, 5);
